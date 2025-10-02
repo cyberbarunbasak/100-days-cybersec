@@ -1,159 +1,50 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 2: Linux Fundamentals - OverTheWire Bandit 0-10 - Completion Note</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #2c3e50;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .status {
-            background-color: #27ae60;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #2980b9;
-            margin-top: 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .completed {
-            color: #27ae60;
-            font-weight: bold;
-        }
-        .deliverables {
-            background-color: #f1f8ff;
-            border-left: 4px solid #3498db;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .skill-tag {
-            background-color: #e0e7ff;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.9em;
-            color: #4f46e5;
-        }
-        .checkpoint {
-            background-color: #e8f5e9;
-            border-left: 4px solid #2ecc71;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 0 8px 8px 0;
-        }
-        .signature {
-            margin-top: 30px;
-            text-align: right;
-            font-style: italic;
-            color: #7f8c8d;
-        }
-        code {
-            background-color: #f1f1f1;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>Day 2: Linux Fundamentals - OverTheWire Bandit 0-10</h1>
-        <div class="status">✅ TASK COMPLETED</div>
-    </div>
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
 
-    <div class="section">
-        <h2>Goal</h2>
-        <p>Master essential Linux command line skills for penetration testing.</p>
-    </div>
+  <div style="text-align: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #2c3e50;">
+    <h1 style="color: #2c3e50; margin: 0;">Day 2: Linux Fundamentals - OverTheWire Bandit 0-10</h1>
+    <span style="background-color: #27ae60; color: white; padding: 6px 14px; border-radius: 16px; font-weight: bold; display: inline-block; margin-top: 8px;">✅ TASK COMPLETED</span>
+  </div>
 
-    <div class="section">
-        <h2>Task</h2>
-        <p>OverTheWire Bandit Levels 0-10</p>
-        <p><strong>Time Spent:</strong> Full-time (7 hours)</p>
-    </div>
+  <div style="margin: 20px 0; padding: 15px; background: #fff; border-left: 4px solid #3498db; border-radius: 6px;">
+    <strong>Goal:</strong> Master essential Linux command line skills for penetration testing
+  </div>
 
-    <div class="section">
-        <h2>Steps Completed</h2>
-        <ul>
-            <li><span class="completed">✓</span> Successfully SSH’d into <code>bandit.labs.overthewire.org</code> using credentials for each level</li>
-            <li><span class="completed">✓</span> Completed all Bandit levels from 0 through 10</li>
-            <li><span class="completed">✓</span> Documented every command used and the corresponding flag (password) discovered for each level</li>
-            <li><span class="completed">✓</span> Practiced essential file manipulation (e.g., <code>cat</code>, <code>ls</code>, <code>find</code>, <code>grep</code>), file permissions (<code>chmod</code>, <code>ls -l</code>), and basic networking concepts</li>
-            <li><span class="completed">✓</span> Consulted <code>man</code> pages extensively to understand command syntax, options, and behavior (e.g., <code>man ls</code>, <code>man find</code>)</li>
-        </ul>
-    </div>
+  <div style="margin: 20px 0; padding: 15px; background: #fff; border-left: 4px solid #e67e22; border-radius: 6px;">
+    <strong>Task:</strong> OverTheWire Bandit Levels 0-10<br>
+    <strong>Time Spent:</strong> Full-time (7 hours)
+  </div>
 
-    <div class="section deliverables">
-        <h2>Deliverable</h2>
-        <p>Created and submitted the required write-up file:</p>
-        <ul>
-            <li><code>day_02_bandit_writeup.md</code> — A comprehensive Markdown document containing:
-                <ul>
-                    <li>Step-by-step commands used for each level (0–10)</li>
-                    <li>Explanations of how each solution worked</li>
-                    <li>Key Linux concepts reinforced (e.g., hidden files, symbolic links, file permissions, command substitution)</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+  <div style="margin: 20px 0; padding: 15px; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <strong>Steps Completed:</strong>
+    <ul style="padding-left: 20px; margin: 10px 0;">
+      <li><span style="color: #27ae60; font-weight: bold;">✓</span> SSH to <code style="background: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace;">bandit.labs.overthewire.org</code></li>
+      <li><span style="color: #27ae60; font-weight: bold;">✓</span> Completed levels 0 through 10</li>
+      <li><span style="color: #27ae60; font-weight: bold;">✓</span> Documented each command used and flag discovered</li>
+      <li><span style="color: #27ae60; font-weight: bold;">✓</span> Practiced file manipulation, permissions, and basic networking</li>
+      <li><span style="color: #27ae60; font-weight: bold;">✓</span> Used <code style="background: #f1f1f1; padding: 2px 6px; border-radius: 4px; font-family: monospace;">man</code> pages to understand commands deeply</li>
+    </ul>
+  </div>
 
-    <div class="section">
-        <h2>Skills Demonstrated</h2>
-        <div class="skills">
-            <span class="skill-tag">linux</span>
-            <span class="skill-tag">ssh</span>
-            <span class="skill-tag">file-system</span>
-        </div>
-    </div>
+  <div style="margin: 20px 0; padding: 15px; background: #f1f8ff; border-left: 4px solid #3498db; border-radius: 6px;">
+    <strong>Deliverable:</strong> <code style="background: #e0e7ff; padding: 2px 6px; border-radius: 4px; font-family: monospace;">day_02_bandit_writeup.md</code> with commands and explanations
+  </div>
 
-    <div class="checkpoint">
-        <h3>Checkpoint Verification</h3>
-        <p><strong>Question:</strong> What command shows hidden files and their permissions?</p>
-        <p><strong>Answer:</strong> The command <code>ls -la</code> (or <code>ls -al</code>) shows all files—including hidden ones (those starting with a dot)—along with detailed permission information.</p>
+  <div style="margin: 20px 0; padding: 15px; background: #fff; border-radius: 6px;">
+    <strong>Skills:</strong>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+      <span style="background: #e0e7ff; padding: 4px 10px; border-radius: 12px; font-size: 0.9em; color: #4f46e5;">linux</span>
+      <span style="background: #e0e7ff; padding: 4px 10px; border-radius: 12px; font-size: 0.9em; color: #4f46e5;">ssh</span>
+      <span style="background: #e0e7ff; padding: 4px 10px; border-radius: 12px; font-size: 0.9em; color: #4f46e5;">file-system</span>
     </div>
+  </div>
 
-    <div class="signature">
-        <p>Completed on: <strong>April 28, 2024</strong></p>
-        <p>— Your Name</p>
-    </div>
-</body>
-</html>
-```
+  <div style="margin: 20px 0; padding: 15px; background: #e8f5e9; border-left: 4px solid #2ecc71; border-radius: 6px;">
+    <strong>Checkpoint:</strong> What command shows hidden files and their permissions?<br>
+    <strong>Answer:</strong> <code style="background: #d5f5d5; padding: 2px 6px; border-radius: 4px; font-family: monospace;">ls -la</code>
+  </div>
+
+  <div style="text-align: right; margin-top: 25px; font-style: italic; color: #7f8c8d; font-size: 0.9em;">
+    ✍️ Completed on: April 28, 2024 — Your Name
+  </div>
+
+</div>
