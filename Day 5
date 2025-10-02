@@ -1,1 +1,282 @@
+🔧 100 Days of Cybersecurity - Day 5 Report Card
+Completion Status: BURP SUITE MASTERED! ✅
+Day Focus: Burp Suite Introduction - Proxy & Interception Fundamentals
+Motto: "The web flows through Burp - learn to direct the current."
 
+📊 Overall Progress Overview
+Metric	Status	Emoji Verdict
+PortSwigger Labs	Completed & Documented	🎯✅
+Proxy Configuration	Browser & Burp Synced	🔄✅
+Module Mastery	Proxy, Repeater, Intruder, Target	🛠️✅
+HTTPS Interception	SSL Certificate Installed	🔐✅
+Checkpoint Test	PASSED	🧠✅
+🎯 PortSwigger Academy Breakdown
+📚 "Getting Started with Burp Suite" Modules
+Burp Interface Navigation: Dashboard, project setup, tool configurations
+
+Proxy Fundamentals: Interception rules, request/response modification
+
+Target Scope: Site map development, scope management
+
+Repeater Usage: Manual request manipulation and testing
+
+Intruder Basics: Payload positioning and attack configurations
+
+🛠️ Burp Suite Module Mastery
+🔄 Proxy Module - Traffic Interception
+bash
+# Browser Proxy Configuration
+Proxy Settings: 127.0.0.1:8080
+Intercept: ON for both requests and responses
+Key Skills Acquired:
+
+✅ Real-time HTTP/S traffic interception
+
+✅ Request modification (parameters, headers, methods)
+
+✅ Response manipulation and analysis
+
+✅ Interception filters and rules configuration
+
+Practical Exercise:
+
+http
+# Intercepted GET Request
+GET /login HTTP/1.1
+Host: test.com
+User-Agent: Mozilla/5.0
+Cookie: session=abc123
+
+# Modified Request
+GET /admin HTTP/1.1
+Host: test.com
+User-Agent: Burp-Tester/1.0
+Cookie: session=admin_token
+X-Forwarded-For: 127.0.0.1
+🎯 Repeater Module - Manual Testing
+Workflow Mastered:
+
+Capture request in Proxy
+
+Send to Repeater for manual manipulation
+
+Modify parameters, headers, and body content
+
+Replay requests and analyze differences
+
+Testing Scenarios:
+
+Parameter tampering (IDOR testing)
+
+HTTP method changing (GET → POST)
+
+Header injection attempts
+
+Authentication bypass testing
+
+🎯 Target Module - Site Mapping
+Scope Management:
+
+bash
+# Target Scope Configuration
+Included Hosts: *.target.com
+Excluded URLs: logout, delete-account
+Site Map Features Utilized:
+
+✅ Automatic discovery of endpoints and parameters
+
+✅ Visual representation of application structure
+
+✅ Filtering by file type, extension, and status
+
+✅ Annotations and comments for collaboration
+
+⚡ Intruder Module - Basic Fuzzing
+Attack Types Explored:
+
+Sniper: Single parameter fuzzing
+
+Battering Ram: Multiple parameters with same payloads
+
+Pitchfork: Multiple parameters with different payload lists
+
+Cluster Bomb: Comprehensive parameter combinations
+
+Simple Fuzzing Example:
+
+http
+POST /login HTTP/1.1
+Host: target.com
+Content-Type: application/x-www-form-urlencoded
+
+username=§admin§&password=§test§
+🔧 Configuration Guide Created
+🌐 Browser Proxy Setup
+Firefox Configuration:
+
+text
+Manual proxy configuration: 127.0.0.1
+Port: 8080
+No proxy for: localhost, 127.0.0.1
+Chrome Configuration:
+
+bash
+# Launch command with proxy
+google-chrome --proxy-server=127.0.0.1:8080
+🔐 SSL Certificate Installation
+Process Documented:
+
+Browse to http://burp from configured browser
+
+Download cacert.der certificate
+
+Convert to .pem format if needed
+
+Import into browser certificate store
+
+Enable trust for SSL identification
+
+Verification Command:
+
+bash
+curl --proxy http://127.0.0.1:8080 https://example.com
+⚙️ Burp Project Configuration
+Recommended Settings:
+
+Project: Temporary project in memory
+
+Configuration: Burp Default (fine-tuned)
+
+Proxy Listeners: Running on all interfaces
+
+Intercept: Client requests only (initial setup)
+
+📸 Evidence Collection
+✅ Successful Interception Proof
+Screenshot 1: Browser traffic captured in Proxy tab
+
+Screenshot 2: Modified request with custom headers
+
+Screenshot 3: Repeater module with manipulated parameters
+
+Screenshot 4: Site map showing discovered endpoints
+
+Screenshot 5: Intruder attack with payload positions
+
+🔍 Real-World Testing Scenarios
+Parameter Manipulation: Changed user_id=1 to user_id=0
+
+HTTP Method Testing: Converted GET to POST requests
+
+Header Injection: Added X-Forwarded-For and X-Original-URL
+
+Cookie Tampering: Modified session values and privileges
+
+🎯 Checkpoint Challenge
+The Critical Question: "How do you configure Burp to intercept HTTPS traffic?"
+
+ANSWER: Install Burp's CA Certificate 🎉
+Step-by-Step Process:
+
+Configure Browser Proxy:
+
+text
+HTTP Proxy: 127.0.0.1:8080
+SSL Proxy: 127.0.0.1:8080
+Install Burp CA Certificate:
+
+Navigate to http://burp in your browser
+
+Click "CA Certificate" to download
+
+Import into browser's certificate store
+
+Enable trust for SSL interception
+
+Browser-Specific Instructions:
+Firefox: Settings → Privacy & Security → Certificates → View Certificates → Import
+Chrome: Settings → Security → Manage Certificates → Trusted Root Certification Authorities → Import
+
+Verification:
+
+bash
+# Test HTTPS interception
+curl --proxy http://127.0.0.1:8080 https://google.com
+Why This Works:
+
+Burp acts as a Man-in-the-Middle (MITM) proxy
+
+Generates dynamic certificates for HTTPS sites
+
+Browser trusts Burp's CA, allowing decryption
+
+Enables inspection of encrypted traffic
+
+📈 Skills Leveled Up
+🟢 Core Competencies
+burp-suite 🔧 - Professional web testing platform mastery
+
+proxy 🔄 - Traffic interception and manipulation
+
+web-testing 🌐 - Systematic application assessment
+
+🟡 Technical Skills
+https-interception 🔐 - SSL/TLS traffic decryption
+
+request-manipulation ⚡ - Real-time parameter modification
+
+tool-configuration ⚙️ - Environment setup and optimization
+
+🔵 Methodology Skills
+manual-testing 🎯 - Controlled request/response analysis
+
+vulnerability-hunting 🔍 - Systematic flaw discovery
+
+workflow-efficiency 📊 - Streamlined testing processes
+
+📁 Deliverables Completed
+✅ Created: Burp Suite Configuration Guide
+Step-by-step browser proxy setup
+
+SSL certificate installation instructions
+
+Module-specific configuration tips
+
+Troubleshooting common issues
+
+✅ Collected: Interception Evidence
+Screenshots of successful traffic capture
+
+Modified request examples
+
+Tool configuration proofs
+
+Testing workflow documentation
+
+💡 Key Takeaways
+Proxy is Foundation - All Burp modules rely on proper proxy configuration
+
+SSL is Mandatory - Modern web requires HTTPS interception capability
+
+Repeater is Your Best Friend - Manual testing reveals nuances automated tools miss
+
+Organization Matters - Proper scoping and site mapping saves time
+
+Practice Makes Perfect - Each intercepted request teaches something new
+
+🔮 Real-World Applications
+Penetration Testing Workflow:
+Reconnaissance: Site mapping and endpoint discovery
+
+Manual Testing: Parameter manipulation in Repeater
+
+Automated Testing: Payload fuzzing with Intruder
+
+Analysis: Response comparison and vulnerability validation
+
+Bug Bounty Hunting:
+Rapid Testing: Quick iteration between Proxy and Repeater
+
+Complex Scenarios: Multi-step workflow testing
+
+Proof of Concept: Clean vulnerability demonstration
